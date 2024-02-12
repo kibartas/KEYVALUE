@@ -4,7 +4,7 @@ import (
 	"github.com/hashicorp/raft"
 )
 
-type transport struct {}
+type transport struct{}
 
 func (t *transport) Consumer() <-chan raft.RPC {
 	return make(<-chan raft.RPC)
